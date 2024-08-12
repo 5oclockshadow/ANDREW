@@ -1,0 +1,72 @@
+/* Apply a smooth grey-pink gradient background with a blur effect */
+body {
+    background: linear-gradient(135deg, #f0f0f0, #e0c3fc, #8ec5fc);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    backdrop-filter: blur(10px);
+}
+
+/* Container for the content */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Glossy effect with transparency */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+}
+
+/* Style for the title */
+h1 {
+    font-size: 2.5em;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the input box */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+}
+
+/* Style for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
